@@ -21,6 +21,19 @@ main {
 
 /* GENERAL SETTINGS*/
 
+.advantage-box {
+  display: flex;
+  justify-content: center;
+  height: 120px;
+  width: 270px;
+  background: var(--brand-background-light);
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -40,7 +53,6 @@ main {
 /*COMMON*/
 
 :root {
-
   /* Grid */
   --element-in-row: 3;
   /* Font */
@@ -56,11 +68,11 @@ main {
   --brand-background-dark: #2f303a;
   --brand-background-white: var(--brand-color-white);
   --photo-backround-white: #eeeeee;
-   /* Icon background colors */
-   --icon-background-color-blue: #2196F3;
-   --icon-background-color-black: var(--brand-color-black);
-   --icon-background-color-dark-grey: var(--brand-color-grey);
-   --icon-background-color-light-grey: #AFB1B8;
+  /* Icon background colors */
+  --icon-background-color-blue: #2196f3;
+  --icon-background-color-black: var(--brand-color-black);
+  --icon-background-color-dark-grey: var(--brand-color-grey);
+  --icon-background-color-light-grey: #afb1b8;
 }
 
 /* BODY-COMMON */
@@ -151,23 +163,11 @@ body {
   color: var(--brand-color-blue);
 }
 
-
-
-.nav-icon-mail{
-  background-color:var(--icon-background-color-dark-grey); 
-  margin-top: 34px;
-  margin-right: 10px;
-
-} 
-
-.nav-icon-phone {
-  width: 10px;
-  height: 16px;
-  background-color:var(--icon-background-color-dark-grey);
-  margin-top: 32px; 
+.nav-icon {
+  background-color: var(--brand-color-white);
+  fill: var(--icon-background-color-dark-grey);
   margin-right: 10px;
 }
-
 
 /*INDEX.HTML*/
 
@@ -179,7 +179,15 @@ body {
 }
 
 .top-background {
-  background-color: var(--brand-background-dark);
+  background-image: url(/images/background.jpg);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(48, 49, 59, 0.4),
+    rgba(47, 48, 58, 0.4),
+    url(/images/backgound.jpg)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -435,4 +443,3 @@ body {
 .footer-item {
   padding-bottom: 9px;
 }
-
