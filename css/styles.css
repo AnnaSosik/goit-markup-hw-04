@@ -70,8 +70,6 @@ main {
   --photo-backround-white: #eeeeee;
   /* Icon background colors */
   --icon-background-color-blue: #2196f3;
-  --icon-background-color-black: var(--brand-color-black);
-  --icon-background-color-dark-grey: var(--brand-color-grey);
   --icon-background-color-light-grey: #afb1b8;
 }
 
@@ -165,7 +163,7 @@ body {
 
 .nav-icon {
   background-color: var(--brand-color-white);
-  fill: var(--icon-background-color-dark-grey);
+  fill: var(--brand-color-grey);
   margin-right: 10px;
 }
 
@@ -317,6 +315,34 @@ body {
   justify-content: space-between;
   text-align: center;
 }
+
+.social-media-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+}
+
+.social-media-icon {
+  fill:var(--icon-background-color-light-grey);
+}
+
+.social-media-button {
+  border:none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--icon-background-color-light-grey);
+  align-items: center;
+  display: flex;
+}
+
+.social-media-button:hover {
+  background-color: var(--brand-color-blue);
+  fill:var(--brand-color-white);
+
+}
+
 
 /* PORTFOLIO.HTML*/
 
