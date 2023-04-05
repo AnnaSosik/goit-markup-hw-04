@@ -56,6 +56,11 @@ main {
   --brand-background-dark: #2f303a;
   --brand-background-white: var(--brand-color-white);
   --photo-backround-white: #eeeeee;
+   /* Icon background colors */
+   --icon-background-color-blue: #2196F3;
+   --icon-background-color-black: var(--brand-color-black);
+   --icon-background-color-dark-grey: var(--brand-color-grey);
+   --icon-background-color-light-grey: #AFB1B8;
 }
 
 /* BODY-COMMON */
@@ -145,6 +150,24 @@ body {
 .contact-link:is(:hover, :focus, ) {
   color: var(--brand-color-blue);
 }
+
+
+
+.nav-icon-mail{
+  background-color:var(--icon-background-color-dark-grey); 
+  margin-top: 34px;
+  margin-right: 10px;
+
+} 
+
+.nav-icon-phone {
+  width: 10px;
+  height: 16px;
+  background-color:var(--icon-background-color-dark-grey);
+  margin-top: 32px; 
+  margin-right: 10px;
+}
+
 
 /*INDEX.HTML*/
 
@@ -412,3 +435,4 @@ body {
 .footer-item {
   padding-bottom: 9px;
 }
+
