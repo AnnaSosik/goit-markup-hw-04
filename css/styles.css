@@ -182,7 +182,7 @@ body {
     to bottom,
     rgba(48, 49, 59, 0.4),
     rgba(47, 48, 58, 0.4),
-    url(/images/backgound.jpg)
+    url(/images/background.jpg)
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -284,7 +284,7 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-  height: 368px;
+  height: 428px;
 }
 
 .team-title {
@@ -320,15 +320,14 @@ body {
   display: flex;
   list-style: none;
   justify-content: center;
-
 }
 
 .social-media-icon {
-  fill:var(--icon-background-color-light-grey);
+  fill: var(--icon-background-color-light-grey);
 }
 
 .social-media-button {
-  border:none;
+  border: none;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -339,10 +338,8 @@ body {
 
 .social-media-button:hover {
   background-color: var(--brand-color-blue);
-  fill:var(--brand-color-white);
-
+  fill: var(--brand-color-white);
 }
-
 
 /* PORTFOLIO.HTML*/
 
