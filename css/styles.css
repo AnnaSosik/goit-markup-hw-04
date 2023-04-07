@@ -178,6 +178,7 @@ body {
 
 .top-background {
   background-image: url(/images/background.jpg);
+  Width:1600px;
   background-image: linear-gradient(
     to bottom,
     rgba(48, 49, 59, 0.4),
@@ -351,10 +352,6 @@ body {
 
 /*Section Our Clients*/
 
-.client-box {
-  padding-right: 215px;
-  padding-left: 215px;
-}
 
 .client {
   display: flex;
@@ -364,17 +361,23 @@ body {
 
 .client-icon {
   fill: var(--icon-background-color-light-grey);
-}
-
-.client-link {
+  background-color: var(--brand-color-white);
   border: 1px solid var(--icon-background-color-light-grey);
+  width: 170px;
+  height: 92px;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
 }
 
-.client-border {
-  width: 170px;
-  height: 92px;
+
+.client-icon:hover,
+.client-icon:focus{
+ fill: var(--brand-color-blue);
+ border-color: var(--brand-color-blue);
 }
+
+
 
 
 /* PORTFOLIO.HTML*/
@@ -392,6 +395,13 @@ body {
   flex-basis: calc(100%- (var(--element-in-row)-1 * var(--gap))) /
     var(--element-in-row);
 }
+
+
+.grid-item:hover,
+.grid-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .filter-button {
   padding: 6px 22px;
