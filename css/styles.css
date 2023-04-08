@@ -186,8 +186,13 @@ body {
   );
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+
 }
 
 .top-title {
