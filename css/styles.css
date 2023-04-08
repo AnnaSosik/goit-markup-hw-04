@@ -181,8 +181,12 @@ body {
 }
 
 .top-background {
-  background-image: url(./images/background.jpg),
-    linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(./images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -190,6 +194,7 @@ body {
   padding-bottom: 200px;
   max-width: 1600px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .top-title {
