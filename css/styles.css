@@ -24,13 +24,11 @@ main {
 .advantage-box {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 120px;
   width: 270px;
-  background: var(--brand-background-light);
   border-radius: 4px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  align-items: center;
+  background: var(--brand-background-light);
   margin-bottom: 30px;
 }
 
@@ -113,6 +111,12 @@ body {
   color: var(--brand-color-blue);
 }
 
+.nav-list {
+  width: 294px;
+  justify-content: space-between;
+  gap: 46px;
+}
+
 .nav-list,
 .contact-list {
   display: flex;
@@ -122,11 +126,6 @@ body {
   width: 294px;
   justify-content: space-between;
   gap: 46px;
-}
-
-.contact-list {
-  margin-left: auto;
-  gap: 50px;
 }
 
 .nav-link {
@@ -145,6 +144,11 @@ body {
 .nav-list,
 .contact-list {
   display: flex;
+}
+
+.contact-list {
+  margin-left: auto;
+  gap: 50px;
 }
 
 .contact-link {
@@ -177,12 +181,12 @@ body {
 }
 
 .top-background {
-  background-image: url(../images/background.jpg);
+  background-image: url(./images/background.jpg);
   background-image: linear-gradient(
     to bottom,
     rgba(48, 49, 59, 0.4),
     rgba(47, 48, 58, 0.4),
-    url(../images/background.jpg)
+    url(./images/background.jpg)
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -478,6 +482,28 @@ body {
   text-align: start;
 }
 
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  padding-bottom: 9px;
+}
+
 .address {
   display: flex;
 }
@@ -504,27 +530,8 @@ body {
   padding-bottom: 60px;
 }
 
-.logo-footer {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #ffffff;
-  display: block;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.nav-list {
-  width: 294px;
-  justify-content: space-between;
-  gap: 46px;
-}
-
-.footer-item {
-  padding-bottom: 9px;
+.join-us-box {
+  margin-left: 70px;
 }
 
 .join-us {
@@ -533,6 +540,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.footer-icon-list {
+  display: flex;
+  list-style: none;
+  column-gap: 10px;
 }
 
 .icon-footer {
@@ -552,19 +565,4 @@ body {
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: var(--brand-color-blue);
-}
-
-.footer-icon-list {
-  display: flex;
-  list-style: none;
-  column-gap: 10px;
-}
-
-.footer-box {
-  display: flex;
-  align-items: baseline;
-}
-
-.join-us-box {
-  margin-left: 70px;
 }
