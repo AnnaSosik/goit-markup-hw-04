@@ -1,4 +1,4 @@
-/* TAG SELECTORS STYLES RESET */
+/* TAG SELECTORS STYLES */
 
 p,
 ul,
@@ -21,6 +21,10 @@ main {
 
 [tabindex="0"]:focus {
   outline: none;
+}
+
+svg {
+  vertical-align: middle;
 }
 
 /* GENERAL SETTINGS*/
@@ -165,7 +169,6 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   align-items: center;
-  display: flex;
 }
 
 .contact-link:is(:hover, :focus, ) {
