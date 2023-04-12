@@ -19,6 +19,10 @@ main {
   text-align: center;
 }
 
+[tabindex="0"]:focus {
+  outline: none;
+}
+
 /* GENERAL SETTINGS*/
 
 .advantage-box {
@@ -149,16 +153,19 @@ body {
 .contact-list {
   margin-left: auto;
   gap: 50px;
+  align-items: center;
 }
 
 .contact-link {
   font-family: var(--main-font);
   color: var(--brand-color-grey);
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
+  align-items: center;
+  display: flex;
 }
 
 .contact-link:is(:hover, :focus, ) {
@@ -171,6 +178,11 @@ body {
   margin-right: 10px;
 }
 
+.nav-icon:is(:hover, :focus, ) {
+  color: var(--brand-color-blue);
+  fill: currentColor;
+}
+
 /*INDEX.HTML*/
 
 /* Section main*/
@@ -181,12 +193,13 @@ body {
 }
 
 .top-background {
+  background-color: var(--brand-background-dark);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(./images/background.jpg);
+    url(../images/background.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -345,14 +358,13 @@ body {
   fill: var(--icon-background-color-light-grey);
 }
 
-.icon:hover,
-.icon:focus {
-  fill: var(--brand-color-white);
-}
-
 .social-icon-link:hover,
 .social-icon-link:focus {
   background-color: var(--brand-color-blue);
+}
+
+.social-icon-link:is(:hover, :focus) > svg {
+  fill: var(--brand-color-white);
 }
 
 /*Section Our Clients*/
@@ -386,6 +398,10 @@ body {
 
 .client-icon:hover,
 .client-icon:focus {
+  fill: var(--brand-color-blue);
+}
+
+.client-link:is(:hover, :focus) > svg {
   fill: var(--brand-color-blue);
 }
 
@@ -564,4 +580,7 @@ body {
 .footer-icon-link:hover,
 .footer-icon-link:focus {
   background-color: var(--brand-color-blue);
+}
+.header .container {
+  align-items: center;
 }
