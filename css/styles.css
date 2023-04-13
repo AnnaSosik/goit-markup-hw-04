@@ -75,7 +75,6 @@ svg {
   --brand-background-white: var(--brand-color-white);
   --photo-backround-white: #eeeeee;
   /* Icon background colors */
-  --icon-background-color-blue: #2196f3;
   --icon-background-color-light-grey: #afb1b8;
 }
 
@@ -181,8 +180,7 @@ body {
   margin-right: 10px;
 }
 
-.nav-icon:is(:hover, :focus, ) {
-  color: var(--brand-color-blue);
+.contact-link:is(:hover, :focus, ) > svg {
   fill: currentColor;
 }
 
@@ -208,7 +206,6 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  
 }
 
 .top-title {
