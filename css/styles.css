@@ -180,6 +180,11 @@ body {
   margin-right: 10px;
 }
 
+.nav-icon:is(:hover, :focus, ) {
+  color: var(--brand-color-blue);
+  fill: currentColor;
+}
+
 .contact-link:is(:hover, :focus, ) > svg {
   fill: currentColor;
 }
