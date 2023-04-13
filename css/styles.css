@@ -186,7 +186,7 @@ body {
 }
 
 .contact-link:is(:hover, :focus, ) > svg {
-  fill: currentColor;
+  fill: var(--brand-color-blue);
 }
 
 /*INDEX.HTML*/
